@@ -12,7 +12,11 @@
 
   <div class="d-grid gap-3 g-2">
     <div class="card 3">
+      {% if item.photo %}
       <img src="{{ item.photo.url }}" class="image-article card-img-top" width="350" alt="Photo" />
+      {% else %}
+      <span></span>
+      {% endif %}
       <div class="card-header">Category:
         <a href="{% url 'Category' item.category.pk %}">{{ item.category.title }}</a>
       </div>

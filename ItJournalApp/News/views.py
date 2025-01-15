@@ -1,7 +1,8 @@
 from django.http import HttpRequest, HttpResponse
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 
 from .models import News, Category
+from .forms import NewsForm
 
 # Create your views here.
 
@@ -47,3 +48,13 @@ def custom_permission_denied_view(request, exception=None):
 
 def custom_bad_request_view(request, exception=None):
     return render(request, "errors/400.html", {})
+
+def add_news(request):
+    if request.method == 'POST':
+        form = NewsForm(request.POST)
+        if form.is_valid():
+            news = form.save()
+            return redirect(news)
+    else:
+        form = NewsForm()
+    return render(request, 'News/add_news.html', {'form': form})
