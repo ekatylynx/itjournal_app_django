@@ -8,7 +8,7 @@
   - DB SQLite
   - etc...
 
-## Requirements
+## 🔧 Requirements
 
   Before you begin, make sure you have the following installed:
 
@@ -16,7 +16,7 @@
   - pip (Python package manager)
   - Git (version control system)
 
-## Setup
+## 🔨 Setup
 
   - The first thing to do is to clone the repository:
 
@@ -59,6 +59,6 @@
 
   - Open your browser and go to `http://127.0.0.1:8000/` to see your application.
 
-  ## Feedback
+  ## 📝 Feedback
 
   Now your project is installed and ready to work. You can start developing or testing the application. If you have any questions or problems, please create an issue in this repository
