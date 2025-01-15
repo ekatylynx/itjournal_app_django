@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} {{ title }} :: {{ block.super }} {% endblock %}
+
+{% block sidebar %}
+{% include 'inc/_sidebar.html' %}
+{% endblock %}
+
+{% block content %}
+  {% for item in news %}
+
+  <div class="d-grid gap-3 g-2">
+    <div class="card 3">
+      <img src="{{ item.photo.url }}" class="image-article card-img-top" width="350" alt="Photo" />
+      <div class="card-header">Category:
+        <a href="{% url 'Category' item.category.pk %}">{{ item.category.title }}</a>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">{{ item.title }}</h5>
+        <p class="card-text">{{ item.content }}</p>
+        <a href="{{ item.get_absolute_url }}" class="btn btn-primary">Go read</a>
+      </div>
+      <div class="card-footer text-body-secondary">
+        {{ item.created_at|date:'Y-m-d H:i' }}
+      </div>
+    </div>
+  </div>
+  <div class="padding-card">padding</div>
+  {% endfor %}
+{% endblock %}
