@@ -1,4 +1,4 @@
-# ItJournal - Django Application
+# 📒 ItJournal - Django Application
 
   This is a simple Python and Django App that allows you to create news, articles and other notes with filtering by categories.
 
