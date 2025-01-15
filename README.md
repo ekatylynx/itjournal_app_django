@@ -25,6 +25,7 @@
   $ cd itjournal_app_django
   ```
 
+
   - Create a Python virtual environment and activate it
 
   ```
@@ -32,11 +33,13 @@
   $ venv\Scripts\activate.bat - for Windows / source venv/bin/activate - for Linux and MacOS
   ```
   
+
   - Installing project dependencies
 
   ```
   $ pip install -r requirements.txt
   ```
+
 
   - Make sure you are in the directory where the file `manage.py` is located and apply database migrations:
 
@@ -45,11 +48,13 @@
   python manage.py migrate
   ```
 
+
   - Create a superuser to access the Django admin panel:
 
   ```sh
   python manage.py createsuperuser
   ```
+
 
   - Start the Django development server:
 
@@ -57,7 +62,9 @@
   $ python manage.py runserver
   ``` 
 
+
   - Open your browser and go to `http://127.0.0.1:8000/` to see your application.
+
 
   ## 📝 Feedback
 
