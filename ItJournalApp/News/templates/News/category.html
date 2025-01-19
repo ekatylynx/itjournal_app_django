@@ -24,7 +24,7 @@
       <div class="card-body">
         <h5 class="card-title">{{ item.title }}</h5>
         <p class="card-text">{{ item.content|truncatewords:90|linebreaks }}</p>
-        <a href="#" class="btn btn-primary">Go read</a>
+        <a href="{{ item.get_absolute_url }}" class="btn btn-primary">Go read</a>
       </div>
       <div class="card-footer text-body-secondary">
         {{ item.created_at|date:'Y-m-d H:i' }}

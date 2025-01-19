@@ -3,12 +3,13 @@
 <div class="list-group">
   {% get_list_categories as categories %}
   <a href="/news" class="list-group-item list-group-item-action {% if request.path == '/news/' %}active{% endif %}" aria-current="true">
-    Главная
+    All the latest news
   </a>
   {% for cat in categories %}
   {% url 'Category' cat.pk as category_url %}
   <a href="{{ category_url }}" class="list-group-item list-group-item-action {% if request.path == category_url %}active{% endif %}" aria-current="true">
     {{ cat.title }}
+
   </a>
   {% endfor %}
 </div>

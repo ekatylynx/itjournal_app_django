@@ -5,15 +5,13 @@
   Add news :: {{ block.super }}
 {% endblock %}
 
-<h1>Add news</h1>
-
 {% block sidebar %}
 {% include 'inc/_sidebar.html' %}
 {% endblock %}
 
 {% block content %}
-
-  <form action="{% url 'Add_news' %}" method="post">
+<h1>Add news</h1>
+  <form action="{% url 'Add_news' %}" method="post" style="margin-left: 5px;">
     {% csrf_token %}
     {{ form.as_p }}
   <button type="submit" class="btn btn-primary btn-block">Submit</button>

@@ -1,0 +1,114 @@
+:root {
+    --body-bg: white;
+    --body-fg: #363636;
+    --primary-fg: black;
+    --darkened-bg: #f1f1f1;
+    --selected-bg: #e3e3e3;
+    --hairline-color: #f4f4f5;
+    --selected-row: #c7c8e9;
+    --body-quiet-color: #999999;
+    --default-button-bg: black;
+    --button-bg: gray;
+}
+
+a:link, a:visited {
+    color: #1495d5;
+}
+
+#content-related {
+    background: #f4f4f5;
+    border-radius: 6px;
+}
+
+#content-related .module h2 {
+    border-bottom: 1px solid #b9b9b9;
+    color: black;
+}
+
+.visually-hidden {
+    color: #7f1d1d;
+}
+
+#header {
+    background: transparent;
+    border-bottom: 1px solid #f4f4f5;
+    color: black;
+
+}
+
+#header a:link, #header a:visited, #logout-form button {
+    color: #363636;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#site-name a:link, #site-name a:visited {
+    color: black;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#user-tools {
+    color: #adadad;
+    font-weight: 400;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.module h2, .module caption, .inline-group h2 {
+    background: #f4f4f5;
+    color: black;
+    border-radius: 6px;
+}
+
+tr:nth-child(even), tr:nth-child(even) .errorlist, tr:nth-child(odd) + .row-form-errors, tr:nth-child(odd) + .row-form-errors .errorlist {
+    background: #f4f4f5;
+}
+
+td, th {
+    border-bottom: 1px solid #b9b9b9;
+}
+
+div.breadcrumbs {
+    background: #f4f4f5;
+    color: black;
+    margin-bottom: 10px;
+}
+
+#nav-filter {
+    border: 1px solid #d1d1d1;
+}
+
+#nav-filter:focus-visible {
+    outline: none;
+}
+
+div.breadcrumbs a {
+    color: black;
+}
+
+div.breadcrumbs a:focus, div.breadcrumbs a:hover {
+    color: gray;
+}
+
+thead th a:link, thead th a:visited {
+    color: black;
+}
+
+#changelist tbody tr:has(.action-select:checked) {
+    background-color: #c7c8e9;
+}
+
+#nav-sidebar .current-app .section:link, #nav-sidebar .current-app .section:visited {
+    color: black;
+}
+
+.colM h1 {
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+label {
+    color: #999999;
+}
