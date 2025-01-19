@@ -2,7 +2,7 @@
 
   This is a simple Python and Django App that allows you to create news, articles and other notes with filtering by categories.
 
-## :triangular_ruler: Стек проекта: 
+## :triangular_ruler: Project stack: 
   - Python 3.13 (Django, Pillow)
   - Django Templates, HTML5, CSS (Bootstrap 5.3.3)
   - DB SQLite
