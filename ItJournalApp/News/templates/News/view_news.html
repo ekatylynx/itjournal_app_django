@@ -20,7 +20,7 @@
       </div>
       <div class="card-body">
         <h5 class="card-title">{{ news_item.title }}</h5>
-        <p class="card-text">{{ news_item.content }}</p>
+        {% autoescape off %}<p class="card-text">{{ news_item.content }}</p>{% endautoescape %}
       </div>
       <div class="card-footer text-body-secondary">
         {{ news_item.created_at|date:'Y-m-d H:i' }}
